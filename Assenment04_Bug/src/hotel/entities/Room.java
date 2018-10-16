@@ -71,7 +71,8 @@ public class Room {
 	}
 
 
-	public void checkout(Booking booking) {
+	public void checkout(Booking booking){
+            bookings.remove(booking);
 		state = state.READY;
 	}
 
